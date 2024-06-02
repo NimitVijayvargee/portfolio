@@ -77,23 +77,20 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 div{
-  background-color: rgba(40,40,60,0.6);
+  background-color: rgba(40,40,60,0.8);
   border-radius: 25px;
   padding: 10px;
   color: #ddddff;
   backdrop-filter: blur(10px);
 }
 
-div{
-  transform: rotate(60);
-}
 
-.jumbotron{
-  background-color: rgba(40,40,60,0.6);
+
+.maindiv{
+  border-radius: 0px;
+  background-color: rgba(40,40,60);
 }
 img {
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 100px;
-  height: auto;
+  max-width: 50%;
+  align-self: center;
 }
