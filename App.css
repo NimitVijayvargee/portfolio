@@ -94,9 +94,19 @@ div{
 }
 .container{
   border-radius: 0;
+  padding: 10px;
+
 }
 img {
   width: 50%;
   align-self: center;
   max-width: 200px;
+}
+
+.card{
+  margin: 10px;
+  transition: 0.5s;
+}
+.card:hover{
+  transform: rotate3d(1,-1,0,20deg);
 }
