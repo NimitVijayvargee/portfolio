@@ -85,12 +85,18 @@ div{
 }
 
 
-
+.clear{
+  all:none;
+}
 .maindiv{
   border-radius: 0px;
   background-color: rgba(40,40,60);
 }
+.container{
+  border-radius: 0;
+}
 img {
-  max-width: 50%;
+  width: 50%;
   align-self: center;
+  max-width: 200px;
 }
