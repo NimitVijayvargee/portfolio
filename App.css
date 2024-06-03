@@ -124,7 +124,7 @@ img {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(10,10,15);
+  background: rgba(60,60,90);
 }
 
 /* Handle on hover */
