@@ -111,3 +111,23 @@ img {
 .card:hover{
   background-color: rgba(40,40,60,1);
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(40,40,60,1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(10,10,15);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(80,80,120);
+}
