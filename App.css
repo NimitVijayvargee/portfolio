@@ -75,13 +75,14 @@ background: rgb(2,0,36);
 background: linear-gradient(139deg, rgba(2,0,36,1) 0%, rgba(4,249,169,1) 11%, rgba(84,9,121,1) 37%, rgba(40,116,191,1) 70%, rgba(15,232,135,1) 94%, rgba(116,0,255,1) 100%);
 background-repeat: no-repeat;
 background-size: cover;
+background-attachment: fixed;
 }
 div{
   background-color: rgba(40,40,60,0.6);
   border-radius: 25px;
   padding: 10px;
   color: #ddddff;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); 
 }
 
 
@@ -94,7 +95,7 @@ div{
 }
 .container{
   border-radius: 0;
-  padding: 8.3%;
+  padding: min(8.3%,20px);
 
 }
 img {
