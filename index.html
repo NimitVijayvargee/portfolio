@@ -8,32 +8,35 @@
     <link rel="stylesheet" href="/App.css">
     <title>hello world - nimit</title>
     <meta name="viewport" content="initial-scale=1">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 
 <body class="roboto-regular">
-    <div class="col-lg-12 maindiv">
+    <div class="col-sm-12 maindiv">
         <p style="font-size: 60px;">hello world</p>
         <img src="img/yessir.png">
-        <p class="col-lg-12">i'm nimit and i do some cool stuff</p>
+        <p class="col-sm-12">i'm nimit and i do some cool stuff</p>
     </div>
-    <div class="container col-lg-12 clear">
+    <div class="container col-sm-12 clear">
         <p style="font-size: 50px;">Projects</p>
-        <div class="card col-lg-3">
+        <div class="card col-sm-3">
             <p style="font-size: 30px;">Spiderbot | Onboard</p>
-            <ul>
-                <img src="img/pcb-spiderbot.png">
-            </ul>
+            <img src="img/pcb-spiderbot.png">
+            <!--<model-viewer alt="Spiderbot PCB Model" src="/img/pcb-spiderbot.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>-->
+            <p>A PCB to mount onto a chassis and control a robot; all powered by a Raspberry Pi Pico W.</p>
+            <a href="pages/spiderbot.html">Learn more!</a>
         </div>
-        <div class="card col-lg-3">
+        <div class="card col-sm-3">
             <p style="font-size: 30px;">Sokoban Super | Sprig</p>
-                <img src="img/SokobanSuper.png" class="col-lg-12"><br>
-                <a href="https://sprig.hackclub.com/gallery/nimits_sokoban_super">Play It!</a>
-
+            <img src="img/SokobanSuper.png"><br>
+            <p>A tile based game on the Sprig, just like the classic Sokoban game!</p>
+            <a href="https://sprig.hackclub.com/gallery/nimits_sokoban_super">Play It!</a>
+            <a href="pages/sokobansuper.html">Learn more!</a>
         </div>
     </div>
-    <div class="container col-lg-12 clear">
+    <div class="container col-sm-12 clear">
         <p style="font-size: 50px;">About me</p>
-        <div class="card col-lg-3">
+        <div class="card col-sm-3">
             <p style="font-size: 30px;">languages!</p>
             <ul>
                 <li>python</li>
@@ -43,7 +46,7 @@
                 <li>regular boring C (a bit)</li>
             </ul>
         </div>
-        <div class="card col-lg-3">
+        <div class="card col-sm-3">
             <p style="font-size: 30px;">skills!</p>
             <ul>
                 <li>electronics</li>
@@ -53,23 +56,23 @@
                 <li>yapping (i'm so sorry)</li>
             </ul>
         </div>
-        <div class="card col-lg-5">
+        <div class="card col-sm-5">
             <p style="font-size: 30px;"">stuff i am working on right now!</p>
                 <ul>
-                    <li>a robot that can follow lines and shit</li>
+                    <li>the spiderbot</li>
                     <li>This website</li>
-                    <li>Working on some projects</li>
+                    <li>an exploration sprig game</li>
                     <li>getting to gold in valorant</li>
                 </ul>
             </div>
     </div>
-    <div class=" container col-lg-12 clear">
+    <div class=" container col-sm-12 clear">
             <p style="font-size: 50px;">Gallery!</p>
-            <div class="card col-lg-12">
+            <div class="card col-sm-12">
                 <p style="font-size: 30px;">Nothing here yet, stay tuned!</p>
             </div>
     </div>
-    <div class="col-lg-12 maindiv">
+    <div class="col-sm-12 maindiv">
         <p>copyright or some legal boogaloo (i do not really care)</p>
         <p>nimit.vijayvargee@gmail.com</p>
         <p>+91 99755 53445</p>

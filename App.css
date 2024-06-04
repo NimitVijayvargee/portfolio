@@ -84,9 +84,7 @@ div{
 }
 
 
-.clear{
-  all:none;
-}
+
 .maindiv{
   border-radius: 0;
   background-color: rgba(40,40,60);
@@ -117,6 +115,7 @@ a:link, a:visited {
   background-color: rgba(60,60,90);
   color: #ddddff;
   padding: 10px 20px;
+  margin: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -137,4 +136,7 @@ a:hover, a:active {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(80,80,120);
+}
+.clear{
+  all:none;
 }
