@@ -18,11 +18,32 @@
         <img src="/img/pcb-spiderbot.png">
         <p class="col-sm-12" style="font-size: 20px;">A PCB to mount onto a chassis and control a robot; all powered by a Raspberry Pi Pico W.</p>
     </div>
-    <div class="container">
-        <p style="font-size: 50px;">Read about it</p>
-        <span>
-            <h2>Step 1:</h2><br/>
-            
+    <div class="container col-sm-12">
+        <p style="font-size: 50px;"></p>
+        <span style="font-size: large;">
+            <h2>The Parts</h2><br/>
+            Parts sourcing was a necessary part of this project. The robot must be able to follow lines and
+            control and Ultrasonic sensor. <br><br>
+            The main computer is going to be a Raspberry Pi Pico W. This is because the Pico can handle all these criteria and
+            has internet access allowing me to control the robot remotely. <br><br>
+            The power source is a 4.7v 18650 battery, charged and protected with a TP4056 module. <br><br>
+            The voltage range provided is quite low to drive BO motors, so I have chosen an N20 Metal geared motor.
+            As for the motor driver, I wanted to use the L293D / L298N modules due to their convinience but sadly they both are
+            too high voltage requirements. Thus, I have chosen the MX1508 Dual H-Bridge Motor Driver. <br><br>
+            I also wanted a screen on the robot because that sounds very cool, so I have chosen the ST7735R 1.8" TFT LCD. <br><br>
+            The line detection system is an array of 8 IR Sensors (TCRT-5000). The Ultrasonic Sensor is a backup so the robot does not 
+            run into any walls. The sensor will be mounted onto a servo so that it can be rotated to detect the room it is placed in.
+            <br><br>
+    
+        </span>
+    </div>
+    <div class="container col-sm-12">
+        <p style="font-size: 50px;"></p>
+        <span style="font-size: large;">
+            <h2>The Files</h2><br/>
+            <a href="/assets/Gerber Spiderbot.zip" download>Download the Gerber File</a>
+            <a href="/assets/PickAndPlace.csv" download>Download Pick And Place File</a>
+            <a href="/assets/bom.xlsx" download>Download the BOM File</a>
         </span>
     </div>
     <div class="col-sm-12 maindiv">
