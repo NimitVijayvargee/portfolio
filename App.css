@@ -93,7 +93,7 @@ div{
   border-radius: 0;
   padding: min(8.3%,20px);
 }
-img {
+.img {
   width: 50%;
   align-self: center;
   max-width: 200px;
