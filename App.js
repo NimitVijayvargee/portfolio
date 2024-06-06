@@ -1,7 +1,7 @@
 
 //star generator
 document.addEventListener('DOMContentLoaded', function() {
-    const numDots = 200;
+    const numDots = window.innerHeight * window.innerWidth / 10000;
     const body = document.body;
 
     for (let i = 0; i < numDots; i++) {
@@ -28,3 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+function moveStars(e){
+    console.log(e.posX)
+}
