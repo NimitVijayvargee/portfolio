@@ -70,47 +70,50 @@
   font-style: italic;
 }
 
-body{
-background: linear-gradient(139deg, rgba(2,0,36,1) 0%, rgba(4,249,169,1) 11%, rgba(84,9,121,1) 37%, rgba(40,116,191,1) 70%, rgba(15,232,135,1) 94%, rgba(116,0,255,1) 100%);
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
+body {
+  background: linear-gradient(139deg, rgba(2,0,36,1) 0%, rgba(4,249,169,1) 11%, rgba(84,9,121,1) 37%, rgba(40,116,191,1) 70%, rgba(15,232,135,1) 94%, rgba(116,0,255,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-div{
+
+div {
   background-color: rgba(40,40,60,0.6);
   border-radius: 25px;
   padding: 10px;
   color: #ddddff;
 }
 
-
-
-.maindiv{
+.maindiv {
   border-radius: 0;
   background-color: rgba(40,40,60);
 }
-.container{
+
+.container {
   border-radius: 0;
   padding: min(8.3%,20px);
 }
+
 .img {
   width: 50%;
   align-self: center;
   max-width: 200px;
   margin: 10px;
+  transition: transform 0.1s ease-out;
+  transform-origin: center center;
 }
 
-.card{
+.card {
   margin: 10px;
   transition: 0.5s;
   backdrop-filter: blur(10px);
-
 }
-.card:hover{
+
+.card:hover {
   background-color: rgba(40,40,60,1);
   backdrop-filter: blur(100px);
-
 }
+
 a:link, a:visited {
   background-color: rgba(60,60,90);
   color: #ddddff;
@@ -125,19 +128,24 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: rgba(80,80,120);
 }
+
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: rgba(40,40,60,1);
 }
+
 ::-webkit-scrollbar-thumb {
   background: rgba(60,60,90);
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(80,80,120);
 }
-.clear{
-  all:none;
+
+.clear {
+  all: none;
 }
