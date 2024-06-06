@@ -1,21 +1,57 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.card');
+    const numDots = 60; // Number of dots to create
+    const body = document.body;
 
-    cards.forEach(card => {
-        card.addEventListener('mousemove', function(event) {
-            const rect = card.getBoundingClientRect();
-            const x = event.clientX - rect.left; 
-            const y = event.clientY - rect.top;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
+    for (let i = 0; i < numDots; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
 
-            const rotateX = (centerY - y) / centerY * 20;const rotateY = (x - centerX) / centerX * 20;
+        // Random position
+        const posX = Math.random() * window.innerWidth;
+        const posY = Math.random() * window.innerHeight;
 
-            card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-        });
+        dot.style.left = `${posX}px`;
+        dot.style.top = `${posY}px`;
+        const size = Math.floor(Math.random() * (12 - 2 + 1)) + 2;
+        dot.style.width = `${size}px`;
+        dot.style.height = `${size}px`;
+        console.log('Size:', size);
+        body.appendChild(dot);
+    }
 
-        card.addEventListener('mouseleave', function() {
-            card.style.transform = 'rotateX(0deg) rotateY(0deg)';
+    // Reorder dots in DOM to ensure they appear behind other content
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach(dot => body.insertBefore(dot, body.firstChild));
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.container');
+    const dots = document.querySelectorAll('.dot');
+
+    container.addEventListener('mousemove', function(event) {
+        const containerRect = container.getBoundingClientRect();
+        const containerX = containerRect.left;
+        const containerY = containerRect.top;
+
+        const mouseX = event.clientX - containerX;
+        const mouseY = event.clientY - containerY;
+
+        dots.forEach(dot => {
+            const rect = dot.getBoundingClientRect();
+            const dotCenterX = rect.left + rect.width / 2;
+            const dotCenterY = rect.top + rect.height / 2;
+
+            const dx = mouseX - dotCenterX;
+            const dy = mouseY - dotCenterY;
+
+            // Calculate distance from dot to mouse
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            dot.style.posX = dx
+            dot.style.posY = dy
+
         });
     });
 });
+
+
+

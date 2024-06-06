@@ -71,10 +71,11 @@
 }
 
 body {
-  background: linear-gradient(139deg, rgba(2,0,36,1) 0%, rgba(4,249,169,1) 11%, rgba(84,9,121,1) 37%, rgba(40,116,191,1) 70%, rgba(15,232,135,1) 94%, rgba(116,0,255,1) 100%);
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
 }
 
 div {
@@ -148,4 +149,11 @@ a:hover, a:active {
 
 .clear {
   all: none;
+}
+
+.dot {
+  position: fixed;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: -1;
 }
