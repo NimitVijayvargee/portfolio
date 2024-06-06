@@ -87,7 +87,7 @@ div {
 
 .maindiv {
   border-radius: 0;
-  background-color: rgba(40,40,60);
+  background-color: rgba(40,40,60,0.6);
 }
 
 .container {
@@ -111,7 +111,7 @@ div {
 }
 
 .card:hover {
-  background-color: rgba(40,40,60,1);
+  background-color: rgba(40,40,60,0.6);
   backdrop-filter: blur(100px);
 }
 
