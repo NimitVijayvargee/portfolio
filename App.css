@@ -79,7 +79,7 @@ body {
 }
 
 div {
-  background-color: rgba(40,40,60,0.6);
+  background-color: rgba(40,40,60,0.2);
   border-radius: 25px;
   padding: 10px;
   color: #ddddff;
@@ -107,7 +107,7 @@ div {
 .card {
   margin: 10px;
   transition: 0.5s;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 
 .card:hover {

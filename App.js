@@ -28,6 +28,19 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-function moveStars(e){
-    console.log(e.posX)
+/*function moveStars(e){
+    let x = e.clientX;
+    let y = e.clientY;
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach(dot =>{
+        let dotx = dot.posX;
+        let doty = dot.posY;
+        let dx = dotx - x;
+        let dy = doty - y;
+        dot.style.left = `${dotx-dx}px`;
+        dot.style.top = `${dotx-dx}px`;
+        
+
+    });
 }
+*/
