@@ -1,85 +1,106 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/App.css">
+    <link rel="stylesheet" href="/App.css" />
     <script src="App.js"></script>
     <title>hello world - nimit</title>
-    <meta name="viewport" content="initial-scale=1">
-    <meta name="google-site-verification" content="Y4DeW4qcRp5_1kc9AmM7Da7FalkVLAKZScYQ_WrGC34" />
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
-</head>
+    <meta name="viewport" content="initial-scale=1" />
+    <meta
+      name="google-site-verification"
+      content="Y4DeW4qcRp5_1kc9AmM7Da7FalkVLAKZScYQ_WrGC34"
+    />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
+  </head>
 
-<body class="roboto-regular" onmousemove="moveStars(event)">
+  <body class="roboto-regular">
     <div class="col-sm-12 maindiv">
-        <p style="font-size: 60px;">hello world</p>
-        <img src="img/yessir.png" class="img" >
-        <p class="col-sm-12">i'm nimit and i do some cool stuff</p>
+      <p style="font-size: 60px">hello world</p>
+      <img src="img/yessir.png" class="img" />
+      <p class="col-sm-12">i'm nimit and i do some cool stuff</p>
     </div>
     <div class="container col-sm-12 clear">
-        <p style="font-size: 50px;">Projects</p>
-        <div class="card col-sm-3" style="height: 400px;">
-            <p style="font-size: 30px;">Spiderbot | Onboard</p>
-            <img src="img/pcb-spiderbot.png" class="img" >
-            <!--<model-viewer alt="Spiderbot PCB Model" src="/img/pcb-spiderbot.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>-->
-            <p>A PCB to mount onto a chassis and control a robot; all powered by a Raspberry Pi Pico W.</p>
-            <a href="pages/spiderbot.html">Learn more!</a>
-        </div>
-        <div class="card col-sm-3" style="height: 400px;">
-            <p style="font-size: 30px;">Sokoban Super | Sprig</p>
-            <img src="img/SokobanSuper.png" class="img" ><br>
-            <p>A tile based game on the Sprig, just like the classic Sokoban game!</p>
-            <a href="https://sprig.hackclub.com/gallery/nimits_sokoban_super">Play It!</a>
-            <a href="pages/sokobansuper.html">Learn more!</a>
-        </div>
+      <p style="font-size: 50px">Projects</p>
+      <div class="card col-sm-3" style="height: 400px">
+        <p style="font-size: 30px">Spiderbot | Onboard</p>
+        <img src="img/pcb-spiderbot.png" class="img" />
+        <!--<model-viewer alt="Spiderbot PCB Model" src="/img/pcb-spiderbot.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>-->
+        <p>
+          A PCB to mount onto a chassis and control a robot; all powered by a
+          Raspberry Pi Pico W.
+        </p>
+        <a href="pages/spiderbot.html">Learn more!</a>
+      </div>
+      <div class="card col-sm-3" style="height: 400px">
+        <p style="font-size: 30px">Sokoban Super | Sprig</p>
+        <img src="img/SokobanSuper.png" class="img" /><br />
+        <p>
+          A tile based game on the Sprig, just like the classic Sokoban game!
+        </p>
+        <a href="https://sprig.hackclub.com/gallery/nimits_sokoban_super"
+          >Play It!</a
+        >
+        <a href="pages/sokobansuper.html">Learn more!</a>
+      </div>
     </div>
     <div class="container col-sm-12 clear">
-        <p style="font-size: 50px;">About me</p>
-        <div class="card col-sm-3">
-            <p style="font-size: 30px;">languages!</p>
-            <ul>
-                <li>python</li>
-                <li>circuitpython & micropython</li>
-                <li>html & css</li>
-                <li>arduino C</li>
-                <li>regular boring C (a bit)</li>
-            </ul>
-        </div>
-        <div class="card col-sm-3">
-            <p style="font-size: 30px;">skills!</p>
-            <ul>
-                <li>electronics</li>
-                <li>coding</li>
-                <li>webdev (i did this)</li>
-                <li>robotics</li>
-                <li>playing the keyboard</li>
-                <li>yapping (i'm so sorry)</li>
-            </ul>
-        </div>
-        <div class="card col-sm-5">
-            <p style="font-size: 30px;">stuff i am working on right now!</p>
-                <ul>
-                    <li>the spiderbot</li>
-                    <li>This website</li>
-                    <li>an exploration sprig game</li>
-                    <li>getting to gold in valorant</li>
-                </ul>
-            </div>
+      <p style="font-size: 50px">About me</p>
+      <div class="card col-sm-3">
+        <p style="font-size: 30px">languages!</p>
+        <ul>
+          <li>python</li>
+          <li>circuitpython & micropython</li>
+          <li>html & css</li>
+          <li>arduino C</li>
+          <li>regular boring C (a bit)</li>
+        </ul>
+      </div>
+      <div class="card col-sm-3">
+        <p style="font-size: 30px">skills!</p>
+        <ul>
+          <li>electronics</li>
+          <li>coding</li>
+          <li>webdev (i did this)</li>
+          <li>robotics</li>
+          <li>playing the keyboard</li>
+          <li>yapping (i'm so sorry)</li>
+        </ul>
+      </div>
+      <div class="card col-sm-5">
+        <p style="font-size: 30px">stuff i am working on right now!</p>
+        <ul>
+          <li>the spiderbot</li>
+          <li>This website</li>
+          <li>an exploration sprig game</li>
+          <li>getting to gold in valorant</li>
+        </ul>
+      </div>
     </div>
-    <div class=" container col-sm-12 clear">
-            <p style="font-size: 50px;">Gallery!</p>
-            <div class="card col-sm-12">
-                <p style="font-size: 30px;">Nothing here yet, stay tuned!</p>
-            </div>
+    <div class="container col-sm-12 clear">
+      <p style="font-size: 50px">Gallery!</p>
+      <div class="card col-sm-12">
+        <p style="font-size: 30px">Nothing here yet, stay tuned!</p>
+      </div>
     </div>
     <div class="col-sm-12 maindiv">
+
+      <p>copyright or some legal boogaloo (i do not really care)</p>
+      <p>nimit.vijayvargee@gmail.com</p>
+      <p>+91 99755 53445</p>
+      <a href="https://github.com/NimitVijayvargee/portfolio">Source</a>
+
         <p>copyright or some legal boogaloo (i do not really care)</p>
         <p>nimit.vijayvargee@gmail.com</p>
         <a href="https://github.com/NimitVijayvargee/portfolio">Source</a>
-    </div>
-</body>
 
+    </div>
+  </body>
 </html>
