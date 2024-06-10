@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dot.style.position = 'absolute';
         dot.style.left = `${posX}px`;
         dot.style.top = `${posY}px`;
-    dot.style.animation = `starry ${Math.random()*5 + 3}s infinite`
+        dot.style.animation = `starry ${Math.random()*5 + 3}s infinite`
         dot.setAttribute('data-initial-left', posX);
         dot.setAttribute('data-initial-top', posY);
         dot.setAttribute('data-multiplier', (Math.random()));  // Adjust multiplier for effect
@@ -56,4 +56,11 @@ function parallax(dot, scrollX, scrollY) {
     // Adjust the star position to move in the opposite direction of the scroll
     dot.style.left = `${initialLeft - scrollX * multiplier}px`;
     dot.style.top = `${initialTop - scrollY * multiplier}px`;
+    if(dot.style.top < 1){
+        dot.style.top += docHeight;
+    }
+    if(dot.style.left < 1){
+        dot.style.left += docWidth;
+    }
+    
 }
