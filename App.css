@@ -162,14 +162,19 @@ a:active {
   background: rgb(24,21,80);
 background: radial-gradient(circle, rgba(24,21,80,1) 0%, rgba(0,0,0,1) 100%);
   border-radius: 50%;
-  animation: starry 4s infinite;
 }
 
 @keyframes starry {
   0% {
     opacity: 1;
+    rotate: 120deg;
+  }
+  50% {
+    opacity: 0.4;
+    rotate: 240deg;
   }
   100% {
-    opacity: 0.8;
+    opacity: 1;
+    rotate: 360deg;
   }
 }

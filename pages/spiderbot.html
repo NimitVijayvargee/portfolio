@@ -19,39 +19,33 @@
         <img src="/img/pcb-spiderbot.png" class="img">
         <p class="col-sm-12" style="font-size: 20px;">A PCB to mount onto a chassis and control a robot; all powered by a Raspberry Pi Pico W.</p>
     </div>
-
-    <div class="clear col-sm-12">
-        <div class="container col-sm-12">
-            <div class="col-sm-3 card">
-           The main computer is going to be a Raspberry Pi Pico W. This is because the Pico can handle all these criteria and
-           has internet access allowing me to control the robot remotely. 
-           </div>
-           <div class="col-sm-3 card">
-           The power source is a 4.7v 18650 battery, charged and protected with a TP4056 module.
-           </div>
-           <div class="col-sm-3 card">
-               The voltage range provided is quite low to drive BO motors, so I have chosen an N20 Metal geared motor. 
-           </div>
-       </div>
-       <div class="container col-sm-12">
-           <div class="col-sm-3 card">
-               As for the motor driver, I wanted to use the L293D / L298N modules due to their convinience but sadly they both are
-               too high voltage requirements. Thus, I have chosen the MX1508 Dual H-Bridge Motor Driver.    
-           </div>
-           <div class="col-sm-3 card">
-               I also wanted a screen on the robot because that sounds very cool, so I have chosen the ST7735R 1.8" TFT LCD. 
-           </div>
-           <div class="col-sm-3 card">
-               The line detection system is an array of 8 IR Sensors (TCRT-5000). These will be calibrated via a 10k trimpot attached to the output of the module.
-           </div>
-       </div>
-       <div class="container col-sm-12">
-           <div class="col-sm-3 card">
-           The Ultrasonic Sensor is a backup so the robot does not 
-           run into any walls. The sensor will be mounted onto a servo so that it can be rotated to detect the room it is placed in.
-       </div>
-    </div>
     <div class="container col-sm-12">
+        <div class="col card">
+            The main computer is going to be a Raspberry Pi Pico W. This is because the Pico can handle all these criteria and
+            has internet access allowing me to control the robot remotely. 
+        </div>
+        <div class="col card">
+            The power source is a 4.7v 18650 battery, charged and protected with a TP4056 module.
+        </div>
+        <div class="col card">
+            The voltage range provided is quite low to drive BO motors, so I have chosen an N20 Metal geared motor. 
+        </div>   
+        <div class="col card">
+            As for the motor driver, I wanted to use the L293D / L298N modules due to their convinience but sadly they both are
+            too high voltage requirements. Thus, I have chosen the MX1508 Dual H-Bridge Motor Driver.    
+        </div>
+        <div class="col card">
+            I also wanted a screen on the robot because that sounds very cool, so I have chosen the ST7735R 1.8" TFT LCD. 
+        </div>
+        <div class="col card">
+            The line detection system is an array of 8 IR Sensors (TCRT-5000). These will be calibrated via a 10k trimpot attached to the output of the module.
+        </div>
+        <div class="col card">
+        The Ultrasonic Sensor is a backup so the robot does not 
+        run into any walls. The sensor will be mounted onto a servo so that it can be rotated to detect the room it is placed in.
+        </div>
+        </div>
+        <div class="container col-sm-12">
         <p style="font-size: 50px;"></p>
         <span style="font-size: large;">
             <h2>The Files</h2><br/>

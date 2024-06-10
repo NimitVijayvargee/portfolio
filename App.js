@@ -1,6 +1,6 @@
 // star generator
 document.addEventListener('DOMContentLoaded', function() {
-    const numDots = window.innerHeight * window.innerWidth / 10000;
+    const numDots = window.innerHeight * window.innerWidth  / 5000;
     const body = document.body;
 
     // Set body dimensions to ensure stars stay within it
@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dot.style.position = 'absolute';
         dot.style.left = `${posX}px`;
         dot.style.top = `${posY}px`;
+    dot.style.animation = `starry ${Math.random()*5 + 3}s infinite`
         dot.setAttribute('data-initial-left', posX);
         dot.setAttribute('data-initial-top', posY);
         dot.setAttribute('data-multiplier', (Math.random()));  // Adjust multiplier for effect
